@@ -1,5 +1,6 @@
 import { FadeIn } from "@/components/FadeIn";
 import { createClient } from "@/prismicio";
+import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicText, PrismicRichText } from "@prismicio/react";
 import { ButtonLink } from "@/components/ButtonLink";
