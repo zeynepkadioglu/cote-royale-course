@@ -51,7 +51,7 @@ export const FragranceDisplay = async ({ id }: FragranceDisplayProps) => {
                 />
                 <div className="flex flex-wrap gap-4">
                     <ButtonLink document={fragrance} variant="Secondary">Discover</ButtonLink>
-                    <ButtonLink variant="Primary"> <HiPlus className="mr-2"/> Add to bag</ButtonLink>
+                    <ButtonLink href="#" variant="Primary"> <HiPlus className="mr-2"/> Add to bag</ButtonLink>
 
                 </div>
             </FadeIn>
