@@ -35,7 +35,7 @@ export const RevealText = ({
 }: RevealTextProps) => {
   const componentRef = useRef<HTMLDivElement>(null);
 
-  const words = asText(field).split(" ");
+  const words = asText(field).split(/\s+/);
 
   useGSAP(
     () => {
