@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "belt",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nulla aute labore consectetur mollit nulla et incididunt consequat. Et sunt ipsum nulla officia est laborum amet in id ipsum cupidatat laborum cupidatat."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
