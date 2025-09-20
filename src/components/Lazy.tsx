@@ -2,7 +2,7 @@
 
 import { ComponentProps, useEffect, useRef, useState } from "react"
 
-type Lazyprops = ComponentProps<"div"> & {
+type LazyProps = ComponentProps<"div"> & {
     rootMargin?: string;
 }
 
