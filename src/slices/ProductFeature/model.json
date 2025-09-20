@@ -1,8 +1,8 @@
 {
   "id": "product_ferature",
   "type": "SharedSlice",
-  "name": "ProductFerature",
-  "description": "ProductFerature",
+  "name": "ProductFeature",
+  "description": "ProductFeature",
   "variations": [
     {
       "id": "default",

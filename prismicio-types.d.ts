@@ -130,7 +130,7 @@ type HomeDocumentDataSlicesSlice =
   | VideoSlice
   | CallToActionSlice
   | FragranceListSlice
-  | ProductFeratureSlice
+  | ProductFeatureSlice
   | ScrollTextSlice
   | HeroSlice;
 
@@ -521,11 +521,11 @@ type HeroSliceVariation = HeroSliceDefault;
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
 /**
- * Primary content in *ProductFerature → Default → Primary*
+ * Primary content in *ProductFeature → Default → Primary*
  */
-export interface ProductFeratureSliceDefaultPrimary {
+export interface ProductFeatureSliceDefaultPrimary {
   /**
-   * Heading field in *ProductFerature → Default → Primary*
+   * Heading field in *ProductFeature → Default → Primary*
    *
    * - **Field Type**: Title
    * - **Placeholder**: *None*
@@ -535,7 +535,7 @@ export interface ProductFeratureSliceDefaultPrimary {
   heading: prismic.TitleField;
 
   /**
-   * Description  field in *ProductFerature → Default → Primary*
+   * Description  field in *ProductFeature → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
@@ -545,7 +545,7 @@ export interface ProductFeratureSliceDefaultPrimary {
   description: prismic.RichTextField;
 
   /**
-   * Feature Image field in *ProductFerature → Default → Primary*
+   * Feature Image field in *ProductFeature → Default → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -555,7 +555,7 @@ export interface ProductFeratureSliceDefaultPrimary {
   image: prismic.ImageField<never>;
 
   /**
-   * Fragrance field in *ProductFerature → Default → Primary*
+   * Fragrance field in *ProductFeature → Default → Primary*
    *
    * - **Field Type**: Content Relationship
    * - **Placeholder**: *None*
@@ -566,33 +566,33 @@ export interface ProductFeratureSliceDefaultPrimary {
 }
 
 /**
- * Default variation for ProductFerature Slice
+ * Default variation for ProductFeature Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type ProductFeratureSliceDefault = prismic.SharedSliceVariation<
+export type ProductFeatureSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Simplify<ProductFeratureSliceDefaultPrimary>,
+  Simplify<ProductFeatureSliceDefaultPrimary>,
   never
 >;
 
 /**
- * Slice variation for *ProductFerature*
+ * Slice variation for *ProductFeature*
  */
-type ProductFeratureSliceVariation = ProductFeratureSliceDefault;
+type ProductFeatureSliceVariation = ProductFeatureSliceDefault;
 
 /**
- * ProductFerature Shared Slice
+ * ProductFeature Shared Slice
  *
  * - **API ID**: `product_ferature`
- * - **Description**: ProductFerature
+ * - **Description**: ProductFeature
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type ProductFeratureSlice = prismic.SharedSlice<
+export type ProductFeatureSlice = prismic.SharedSlice<
   "product_ferature",
-  ProductFeratureSliceVariation
+  ProductFeatureSliceVariation
 >;
 
 /**
@@ -735,10 +735,10 @@ declare module "@prismicio/client" {
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
-      ProductFeratureSlice,
-      ProductFeratureSliceDefaultPrimary,
-      ProductFeratureSliceVariation,
-      ProductFeratureSliceDefault,
+      ProductFeatureSlice,
+      ProductFeatureSliceDefaultPrimary,
+      ProductFeatureSliceVariation,
+      ProductFeatureSliceDefault,
       ScrollTextSlice,
       ScrollTextSliceDefaultPrimary,
       ScrollTextSliceVariation,
